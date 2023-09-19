@@ -464,3 +464,9 @@ main .recent-order a {
   gap: 1rem;
   margin-bottom: 1rem;
 }
+
+/*=================SALES ANALYTICS================*/
+
+.right .sales-analytics {
+  margin-top: 2rem;
+}
