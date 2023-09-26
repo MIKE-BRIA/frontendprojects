@@ -1,0 +1,118 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  width: 96%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 10rem auto 24rem;
+}
+
+aside .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+aside .logo {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  position: relative;
+}
+
+aside .logo img {
+  height: 2rem;
+  width: 3rem;
+}
+
+/*=========SIDEBAR======*/
+
+aside .aside {
+  height: 86vh;
+  background-color: rgb(43, 43, 134, 0.5);
+  display: flexs;
+  flex-direction: column;
+  position: relative;
+  border-radius: 9px;
+}
+
+aside .aside a {
+  display: flex;
+  margin-left: 1.5rem;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  height: 4.7rem;
+  transition: all 300ms ease;
+  text-decoration: none;
+}
+
+aside .aside a h3 {
+  font-size: 1rem;
+}
+
+aside .aside a:last-child {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+
+hr {
+  color: rgb(62, 62, 99);
+  size: 2;
+  width: 70%;
+}
+
+/*================NAVBAR==========*/
+
+.navbar {
+  display: flex;
+}
+
+.search-container {
+  width: 20rem;
+  height: 1rem;
+  background-color: rgb(27, 37, 65);
+  border-radius: 19px;
+  display: flex;
+  align-items: center;
+  padding: 0.9rem;
+  border: 2px solid rgb(13, 17, 31);
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.search-container > i {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.search-container > input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: rgb(27, 37, 65);
+  padding: 0rem;
+  margin-left: 1rem;
+}
+
+.navbar .nav {
+  display: flex;
+}
+
+.navbar .nav ul .btc {
+  display: flex;
+}
