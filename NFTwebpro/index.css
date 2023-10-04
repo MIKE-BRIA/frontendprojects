@@ -14,7 +14,7 @@ body {
   width: 96%;
   margin: 0 auto;
   gap: 1.8rem;
-  grid-template-columns: 10rem auto 24rem;
+  grid-template-columns: 10rem auto 20rem;
 }
 
 aside .top {
@@ -78,18 +78,20 @@ hr {
 
 .navbar {
   display: flex;
+  margin-top: 2.5rem;
+  gap: 2rem;
 }
 
 .search-container {
-  width: 20rem;
-  height: 1rem;
+  width: 19rem;
+  height: 0.7rem;
   background-color: rgb(27, 37, 65);
   border-radius: 19px;
   display: flex;
   align-items: center;
   padding: 0.9rem;
   border: 2px solid rgb(13, 17, 31);
-  box-shadow: 2px 2px 2px #888888;
+  box-shadow: 1px 1px 1px #888888;
 }
 
 .search-container > i {
@@ -109,10 +111,22 @@ hr {
   margin-left: 1rem;
 }
 
-.navbar .nav {
+.nav {
   display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
-.navbar .nav ul .btc {
+.nav .btc {
   display: flex;
+  font-size: 0.8rem;
+}
+
+.nav .btc h3 {
+  margin-top: 0.2rem;
+}
+
+.vertical-line {
+  border-left: 2px solid #833232; /* You can adjust the width and color as needed */
+  height: 100%; /* Adjust the height of the line */
 }
