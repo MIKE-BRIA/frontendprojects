@@ -49,3 +49,21 @@ fs.readFile("./files/start.txt", "utf-8", (error1, data1) => {
 });
 
 console.log("Reading file........");
+
+//CREATING A SIMPLE WEB SERVER
+
+const html = fs.readFileSync("./Templete/index.html", "utf-8");
+
+const http = require("http"); //IMPORT HTTP MODULE
+
+//STEP 1: CREATE A SERVER
+const server = http.createServer((request, response) => {
+  response.end(html);
+  console.log("A new request received");
+  //console.log(request);
+});
+
+//STEP 2: START THE SERVER
+server.listen(8000, "127.0.0.1", () => {
+  console.log("server has started!");
+});
