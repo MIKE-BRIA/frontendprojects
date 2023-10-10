@@ -142,7 +142,6 @@ aside {
 }
 
 aside .top {
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -166,7 +165,6 @@ aside .close {
 /*================SIDEBAR============*/
 
 aside .aside {
-  background: white;
   display: flex;
   flex-direction: column;
   height: 86vh;
@@ -523,6 +521,11 @@ main .recent-order a {
 
 .right .sales-analytics .item.customers .icon {
   background-color: var(--color-succes);
+}
+
+.right .sales-analytics .add-product:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 .right .sales-analytics .add-product {
