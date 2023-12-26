@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(178, 178, 178);
+  font: montserrat, sans-serif;
+}
+
+header,
+form {
+  min-height: 18vh;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.text {
+  text-align: center;
+}
+
+.text input {
+  min-width: 30%;
+  padding: 10px;
+  margin: auto 0;
+  border: 1px solid #773c3c;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+
+.text button {
+  background-color: #773c3c;
+  color: white;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.todo-list {
+  padding: 0.5rem;
+}
+
+.checkbtn,
+.delbtn {
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border: none;
+  cursor: pointer;
+}
+
+.checkbtn {
+  background: green;
+  cursor: pointer;
+}
+
+.delbtn {
+  background: orangered;
+  cursor: pointer;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
