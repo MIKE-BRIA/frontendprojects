@@ -6,12 +6,16 @@
 
 body {
   background-color: rgb(178, 178, 178);
+  height: 100vh;
   font: montserrat, sans-serif;
 }
 
 header,
 form {
   min-height: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -101,4 +105,40 @@ h1 {
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+.select {
+  margin: 0.3rem;
+  font-size: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  color: #0a0a0a;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background-color: #ff6f47;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.3sec ease;
+}
+
+.select:hover::after {
+  background-color: white;
+  color: #ff6f47;
 }
