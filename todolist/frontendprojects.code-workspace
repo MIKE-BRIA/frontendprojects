@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "frontendprojects",
+		"path": ".."
+	},
+	{
+		"name": "qr-code-component-main",
+		"path": "../../../../Downloads/qr-code-component-main/qr-code-component-main"
+	}
+],
+  "settings": {}
+}
