@@ -16,16 +16,33 @@ const player1El = document.getElementById("current--1");
 const player0Pl = document.querySelector(".player--0");
 const player1Pl = document.querySelector(".player--1");
 
-//*starting conditions
-score0El.textContent = 0;
-score1El.textContent = 0;
-diceEl.classList.add("hidden");
+// //*starting conditions
+// score0El.textContent = 0;
+// score1El.textContent = 0;
 
-//*variables
-const scores = [0, 0];
-let currentScore = 0;
-let activePlayer = 0;
-let playing = true;
+let currentScore, scores, activePlayer, playing;
+
+//starting conditions
+const init = () => {
+  //*variables
+  scores = [0, 0];
+  currentScore = 0;
+  activePlayer = 0;
+  playing = true;
+
+  player0El.textContent = 0;
+  player1El.textContent = 0;
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+
+  diceEl.classList.add("hidden");
+  player0Pl.classList.remove("player--winner");
+  player1Pl.classList.remove("player--winner");
+  player0Pl.classList.add("player--active");
+  player1Pl.classList.remove("player--active");
+};
+
+init();
 
 const Swictplayer = () => {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
@@ -82,3 +99,5 @@ btnHold.addEventListener("click", () => {
     Swictplayer();
   }
 });
+
+btnNew.addEventListener("click", init);
