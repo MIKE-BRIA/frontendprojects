@@ -21,6 +21,7 @@ calcAge(2002);
 
 */
 
+/*
 // console.log(this);
 //* arrow functions don't own the this keyword they use the parent function
 const jonas = {
@@ -49,3 +50,43 @@ const matilda = {
 matilda.calcAge = brin.calcAge;
 
 matilda.calcAge();
+*/
+
+let lastname = "Willis ";
+let oldlastname = lastname;
+
+lastname = "Brivian";
+
+console.log(lastname, oldlastname);
+
+const jessica = {
+  firstname: "Jessica",
+  lastname: "Michael",
+  age: 32,
+};
+
+const marriedjessica = jessica;
+
+marriedjessica.lastname = "Obungu";
+
+console.log("Before marriage :", jessica);
+console.log("Aftermarriage :", marriedjessica);
+
+//*copying of objects
+const jessica2 = {
+  firstname: "Jessica",
+  lastname: "Michael",
+  age: 32,
+  family: ["Mike", "John", "Suzzan"],
+};
+
+//* a shallow copy of jessica
+const jessicacopy = Object.assign({}, jessica2);
+jessicacopy.firstname = "Owen Daay";
+jessicacopy.lastname = "Debian";
+jessicacopy.age = 45;
+jessicacopy.family.push("mary", "John");
+console.log(jessica2);
+console.log(jessicacopy);
+
+//*Deep copy of jessica
