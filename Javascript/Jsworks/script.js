@@ -16,12 +16,9 @@ function calcAge(birthyear) {
   return age;
 }
 
-const lastname = "Michael Smith";
+const Lastname = "Michael Smith";
 calcAge(2002);
-
 */
-
-/*
 // console.log(this);
 //* arrow functions don't own the this keyword they use the parent function
 const jonas = {
@@ -50,7 +47,6 @@ const matilda = {
 matilda.calcAge = brin.calcAge;
 
 matilda.calcAge();
-*/
 
 let lastname = "Willis ";
 let oldlastname = lastname;
