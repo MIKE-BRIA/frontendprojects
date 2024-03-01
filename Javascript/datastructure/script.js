@@ -54,6 +54,29 @@ const restaurant = {
   },
 };
 
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu);
+
+//*for-of-loop
+
+for (const item of menu) {
+  console.log(item);
+}
+
+for (const item of menu.entries()) {
+  console.log(`${item[0] + 1}: ${item[1]}}`);
+}
+
+// function order() {
+//   console.log("hello");
+// }
+
+order();
+//* for loop in javascript
+// for (let i = 0; i < menu.length; i++) {
+//   console.log(menu[i]);
+// }
+
 /* 
 Let's continue with our football betting app!
 
@@ -116,24 +139,24 @@ const game = {
   },
 };
 
-const [player1, player2] = game.players;
+// const [player1, player2] = game.players;
 
-console.log(player1);
-console.log(player2);
+// console.log(player1);
+// console.log(player2);
 
-const [gk, ...otherplayers] = player1;
-console.log(gk, otherplayers);
+// const [gk, ...otherplayers] = player1;
+// console.log(gk, otherplayers);
 
-const allplayers = [...player1, ...player2];
-console.log(allplayers);
+// const allplayers = [...player1, ...player2];
+// console.log(allplayers);
 
-const player1Final = [...player1, "Thiago", "Coutinho", "oluku"];
-console.log(player1Final);
+// const player1Final = [...player1, "Thiago", "Coutinho", "oluku"];
+// console.log(player1Final);
 
-const { team1, x: draw, team2 } = game.odds;
-console.log(team1);
-console.log(draw);
-console.log(team2);
+// const { team1, x: draw, team2 } = game.odds;
+// console.log(team1);
+// console.log(draw);
+// console.log(team2);
 
 // console.log("----- OR -----");
 
