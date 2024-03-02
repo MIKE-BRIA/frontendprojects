@@ -4,6 +4,34 @@
 const flights =
   "_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30";
 
+const splitflights = flights.split("+");
+
+// function hello(n) {
+//   n.slice(0, 4).toLowerCase();
+//   console.log(n);
+// }
+
+// hello();
+
+function getCode(n) {
+  return n.slice(0, 3).toUpperCase();
+}
+
+console.log(getCode("hello everyoefnk"));
+
+for (const n of splitflights) {
+  const [type, from, to, time] = n.split(";");
+  const output = `${type.startsWith("_Delayed") ? "⏱️" : ""}${type.replaceAll(
+    "_",
+    " "
+  )}  from ${getCode(from)} to ${getCode(to)} (${time.replace(
+    ":",
+    "h"
+  )})`.padStart(45);
+  console.log(output);
+}
+
+console.log(splitflights);
 // Data needed for first part of the section
 const restaurant = {
   name: "Classico Italiano",
@@ -59,9 +87,38 @@ const restaurant = {
 const airline = "TAP Air Portugal";
 const plane = "A320";
 
-console.log(airline.indexOf("Air"));
+const passenger = "jOnAs";
+const passlower = passenger.toLowerCase();
+const sr = passlower.slice(0, 1).toUpperCase() + passlower.slice(1);
 
-// //!Maps
+console.log(sr);
+
+const mine = "   Mike SMith    ";
+
+console.log(mine.toLowerCase().trim());
+
+const announcements =
+  "All passengers should come to boarding door 23,  Boarding door 23";
+
+console.log(announcements.replaceAll("door", "gate"));
+
+// console.log(airline.indexOf("Air"));
+
+// const checkMiddleseat = function (seat) {
+//   //middleseats are B and E
+
+//   const results = seat.slice(-1);
+//   if (results === "B" || results === "E") {
+//     console.log("You have the middle seat, 😂😂");
+//   } else {
+//     console.log("You are lucky, 👍");
+//   }
+// };
+
+// checkMiddleseat("11B");
+// checkMiddleseat("23C");
+// checkMiddleseat("3E");
+// // //!Maps
 // const question = new Map([
 //   ["question", "What is the best programming language in the world? "],
 //   [1, "C"],
