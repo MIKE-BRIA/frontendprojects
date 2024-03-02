@@ -54,34 +54,93 @@ const restaurant = {
   },
 };
 
-//!Looping Objects
-//* Property names
+//!working with strings
 
-const properties = Object.keys(restaurant.openingHours);
+const airline = "TAP Air Portugal";
+const plane = "A320";
 
-console.log(properties);
+console.log(airline.indexOf("Air"));
 
-let openStr = `We are open on ${properties.length} days: `;
+// //!Maps
+// const question = new Map([
+//   ["question", "What is the best programming language in the world? "],
+//   [1, "C"],
+//   [2, "Java"],
+//   [3, "Javascript"],
+//   ["Correct", 3],
+//   [true, "Correct 😘🎶😉"],
+//   [false, "Try again"],
+// ]);
 
-for (const day of properties) {
-  openStr += `${day}, `;
-}
+// console.log(question);
 
-console.log(openStr);
+// console.log(question.get("question"));
+// for (const [key, value] of question) {
+//   if (typeof key === "number") {
+//     console.log(`Answer ${key} : ${value}`);
+//   }
+// }
 
-//* Property values
+// const answer = Number(prompt("Choose the number of your answer"));
+// console.log(answer);
 
-const Values = Object.values(restaurant.openingHours);
-console.log(Values);
+// // console.log(question.get(question.get("correct") === answer));
 
-const entries = Object.entries(restaurant.openingHours);
-console.log(entries);
+// if (answer === 3) {
+//   console.log(question.get(true));
+// } else {
+//   console.log(question.get(false));
+// }
 
-//*looping over the object
+// //* converting a map to an array
 
-for (const [key, { open, close }] of entries) {
-  console.log(`On ${key} we open at ${open} and close at ${close}`);
-}
+// console.log(...question);
+// console.log(question.entries());
+// console.log([...question.keys()]);
+// console.log([...question.values()]);
+
+// const rest = new Map();
+// rest.set("name", "bimax Automobil");
+// rest.set(1, "London, England");
+// rest.set(2, "Paris, France");
+
+// rest
+//   .set("categories", ["Italian", "Pizzeria", "Vegetarian", "Organic"])
+//   .set("open", 11)
+//   .set("close", 23)
+//   .set(true, "We are Open :D")
+//   .set(false, "We are closed :)");
+// console.log(rest.get("name"));
+// console.log(rest);
+
+// //!Looping Objects
+// //* Property names
+
+// const properties = Object.keys(restaurant.openingHours);
+
+// console.log(properties);
+
+// let openStr = `We are open on ${properties.length} days: `;
+
+// for (const day of properties) {
+//   openStr += `${day}, `;
+// }
+
+// console.log(openStr);
+
+// //* Property values
+
+// const Values = Object.values(restaurant.openingHours);
+// console.log(Values);
+
+// const entries = Object.entries(restaurant.openingHours);
+// console.log(entries);
+
+// //*looping over the object
+
+// for (const [key, { open, close }] of entries) {
+//   console.log(`On ${key} we open at ${open} and close at ${close}`);
+// }
 
 // console.log();
 
@@ -176,30 +235,31 @@ const game = {
   },
 };
 
-for (const [i, player] of game.scored.entries()) {
-  console.log(`Goal ${i + 1}: ${player}`);
-}
+// for (const [i, player] of game.scored.entries()) {
+//   console.log(`Goal ${i + 1}: ${player}`);
+// }
 
-//*calculate average odds
+// //*calculate average odds
 
-const odds = Object.values(game.odds);
-let average = 0;
+// const odds = Object.values(game.odds);
+// let average = 0;
 
-for (const odd of odds) {
-  average += odd;
-}
+// for (const odd of odds) {
+//   average += odd;
+// }
 
-console.log(odds);
+// console.log(odds);
 
-average /= odds.length;
+// average /= odds.length;
 
-console.log(average);
+// console.log(average);
 
-//*print content of object to the console
+// //*print content of object to the console
 
-for (const [team, odd] of Object.entries(game.odds)) {
-  console.log(team, odd);
-}
+// for (const [team, odd] of Object.entries(game.odds)) {
+//   const teamStr = team === "x" ? "Draw" : `Victory ${game[team]}`;
+//   console.log(`Odds of ${teamStr} ${odd}`);
+// }
 
 // const [player1, player2] = game.players;
 
