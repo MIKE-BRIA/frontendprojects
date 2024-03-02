@@ -54,24 +54,61 @@ const restaurant = {
   },
 };
 
-const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-console.log(menu);
+//!Looping Objects
+//* Property names
 
-//*for-of-loop
+const properties = Object.keys(restaurant.openingHours);
 
-for (const item of menu) {
-  console.log(item);
+console.log(properties);
+
+let openStr = `We are open on ${properties.length} days: `;
+
+for (const day of properties) {
+  openStr += `${day}, `;
 }
 
-for (const item of menu.entries()) {
-  console.log(`${item[0] + 1}: ${item[1]}}`);
+console.log(openStr);
+
+//* Property values
+
+const Values = Object.values(restaurant.openingHours);
+console.log(Values);
+
+const entries = Object.entries(restaurant.openingHours);
+console.log(entries);
+
+//*looping over the object
+
+for (const [key, { open, close }] of entries) {
+  console.log(`On ${key} we open at ${open} and close at ${close}`);
 }
 
+// console.log();
+
+// for (const day of Object.keys(restaurant.openingHours)) {
+//   console.log(day);
+// }
+
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+// console.log(menu);
+
+// //*for-of-loop
+
+// for (const item of menu) {
+//   console.log(item);
+// }
+
+// for (const item of menu.entries()) {
+//   console.log(`${item[0] + 1}: ${item[1]}}`);
+// }
+
+// // console.log(restaurant.mainMenu?.[0] ?? "That does not exist");
+// console.log(restaurant.mainMenu?.[(0, 2)] ?? "That does not exist");
 // function order() {
 //   console.log("hello");
 // }
 
-order();
+// order();
 //* for loop in javascript
 // for (let i = 0; i < menu.length; i++) {
 //   console.log(menu[i]);
@@ -138,6 +175,31 @@ const game = {
     team2: 6.5,
   },
 };
+
+for (const [i, player] of game.scored.entries()) {
+  console.log(`Goal ${i + 1}: ${player}`);
+}
+
+//*calculate average odds
+
+const odds = Object.values(game.odds);
+let average = 0;
+
+for (const odd of odds) {
+  average += odd;
+}
+
+console.log(odds);
+
+average /= odds.length;
+
+console.log(average);
+
+//*print content of object to the console
+
+for (const [team, odd] of Object.entries(game.odds)) {
+  console.log(team, odd);
+}
 
 // const [player1, player2] = game.players;
 
