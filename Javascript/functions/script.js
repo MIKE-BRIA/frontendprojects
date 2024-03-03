@@ -183,3 +183,32 @@ const tax = rate => {
 };
 
 console.log(tax(0.23)(32901));
+const AddVOT = tax(0.23);
+console.log(AddVOT(100));
+
+//! Immediately invoked function expression
+//* function that runs once
+
+(function () {
+  console.log("I am just am man who wants to know a lot of stuff");
+})();
+
+(() =>
+  console.log("Am learning to become a better person each and everyday"))();
+
+//! Closure
+
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  };
+};
+
+const booker = secureBooking();
+
+booker();
+booker();
+booker();
