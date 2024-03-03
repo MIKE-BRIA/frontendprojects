@@ -212,3 +212,44 @@ const booker = secureBooking();
 booker();
 booker();
 booker();
+
+// console.dir(booker);
+
+console.log("");
+console.log("");
+console.log("");
+//*more closure examples
+
+let f;
+
+const g = function () {
+  const a = 23;
+  f = function () {
+    console.log(a * 3);
+  };
+};
+
+g();
+f();
+const perGroup = 10000;
+
+const boardpassenger = function (n, wait) {
+  const perGroup = n / 3;
+
+  setTimeout(function () {
+    console.log(`We are now boarding all ${n} passengers`);
+    console.log(`There are 3 groups each with ${perGroup} passengers`);
+  }, wait * 1000);
+
+  console.log(`We start boarding in ${wait} seconds`);
+};
+
+boardpassenger(1800, 10);
+
+(function () {
+  const header = document.querySelector("h1");
+  header.style.color = "red";
+  document.querySelector("body").addEventListener("click", () => {
+    header.style.color = "pink";
+  });
+})();
