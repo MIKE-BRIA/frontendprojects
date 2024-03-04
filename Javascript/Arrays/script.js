@@ -84,8 +84,74 @@ const displayMovements = function (movements) {
 displayMovements(account1.movements);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
+//!Data transformation(map, filter, reduce)
+
+//!Map method
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+const eurToUsd = 1.1;
+
+const movementsUSD = movements.map(mov => {
+  return mov * eurToUsd;
+});
+
+console.log(movements);
+console.log(movementsUSD);
+
+console.log("");
+
+const arr = [];
+for (const mov of movements) {
+  arr.push((mov * eurToUsd).toFixed(2));
+}
+
+console.log(arr);
+
+const moveDesc = movements.map(
+  (movement, i) =>
+    `Movement ${i + 1}: You have ${
+      movement > 0 ? "deposited" : "withdrawn"
+    } ${Math.abs(movement)} ${movement > 0 ? "💳" : "🤑"}`
+);
+
+console.log(moveDesc);
+
+console.log("");
+
+//*computing usernames with map methods
 
 /*
+//!coding challenge
+
+const julia1 = [3, 5, 2, 12, 7];
+const kate1 = [4, 1, 15, 8, 3];
+const julia2 = [9, 16, 6, 8, 3];
+const kate2 = [10, 5, 6, 1, 4];
+
+const julia01 = julia1.slice(1, 3);
+// const julia02 = julia2.slice(1, 4);
+console.log(julia01);
+
+const julia = [...julia01, ...julia2];
+const kate = [...kate1, ...kate2];
+
+const dogs = [...julia, ...kate];
+
+console.log(julia, kate);
+console.log(dogs);
+
+console.log(julia1, julia2);
+
+dogs.forEach((dog, i) => {
+  if (dog > 3) {
+    console.log(`Dog number ${i + 1} is an adult, and is ${dog} years old`);
+  } else {
+    console.log(
+      `Dog number ${i + 1} is still a puppy 🐶 and is ${dog} years old`
+    );
+  }
+});
+
 // LECTURES
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
