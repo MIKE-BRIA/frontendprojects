@@ -238,12 +238,32 @@ dogs.forEach((dog, i) => {
   }
 });
 
+//!coding challenge
+
+const data1 = [5, 2, 4, 1, 15, 8, 3];
+const data2 = [16, 6, 10, 5, 6, 1, 4];
+
+const calcAveragHumAge = function (data) {
+  const humanage = data.map(dt => (dt <= 2 ? 2 * dt : 16 + dt * 4));
+  console.log(humanage);
+
+  const filteredage = humanage.filter(dt => dt >= 18);
+  console.log(filteredage);
+
+  const aveg =
+    filteredage.reduce((acc, ftage) => acc + ftage, 0) / filteredage.length;
+  return aveg;
+};
+
+console.log(calcAveragHumAge(data2));
+
 // LECTURES
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
 //! Looping arrays(for each)
+
 
 //* for of
 
