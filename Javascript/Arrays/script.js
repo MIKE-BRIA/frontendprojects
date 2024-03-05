@@ -254,14 +254,14 @@ btnClose.addEventListener("click", e => {
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
-/*
+
 //!Data transformation(map, filter, reduce)
 
 //!Map method
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 const eurToUsd = 1.1;
-
+/*
 const movementsUSD = movements.map(mov => {
   return mov * eurToUsd;
 });
@@ -365,6 +365,33 @@ const totaldepositinUSD = movements
 console.log(totaldepositinUSD);
 
 */
+
+//!sorting arrays
+
+//*strings
+const owners = [
+  "Zachariah",
+  "James",
+  "John",
+  "Adams",
+  "Abraham",
+  "Martha",
+  "Lincolin",
+];
+console.log(owners.sort());
+console.log(owners);
+
+//Numbers
+console.log(movements);
+console.log(movements.sort());
+console.log(movements);
+
+movements.sort((a, b) => {
+  if (a > b) return 1;
+  if (a < b) return -1;
+});
+
+console.log(movements);
 
 /*
 
