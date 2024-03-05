@@ -84,6 +84,8 @@ const displayMovements = function (movements) {
 displayMovements(account1.movements);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
+
+/*
 //!Data transformation(map, filter, reduce)
 
 //!Map method
@@ -100,12 +102,12 @@ console.log(movementsUSD);
 
 console.log("");
 
-const arr = [];
+const arr5 = [];
 for (const mov of movements) {
-  arr.push((mov * eurToUsd).toFixed(2));
+  arr5.push((mov * eurToUsd).toFixed(2));
 }
 
-console.log(arr);
+console.log(arr5);
 
 const moveDesc = movements.map(
   (movement, i) =>
@@ -120,7 +122,41 @@ console.log("");
 
 //*computing usernames with map methods
 
-/*
+const createusername = accs => {
+  accs.forEach(acc => {
+    acc.username = acc.owner
+      .toLowerCase()
+      .split(" ")
+      .map(name => name[0])
+      .join("");
+  });
+};
+
+createusername(accounts);
+console.log(accounts);
+console.log("");
+
+//!Filter method
+//* Used to filter for elements that satisfy a certain condition
+
+const deposits = movements.filter(mov => mov > 0);
+
+const withdrawal = movements.filter(mov => mov < 0);
+
+console.log(movements);
+console.log(deposits);
+console.log(withdrawal);
+
+console.log("");
+
+//!Reduce method
+//*used to make all the elements in an array to a single value with a certain condition
+
+//accumilator is set to start from 0
+const balance = movements.reduce((acc, move) => acc + move, 0);
+
+console.log(balance);
+
 //!coding challenge
 
 const julia1 = [3, 5, 2, 12, 7];
