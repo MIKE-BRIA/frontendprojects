@@ -61,6 +61,7 @@ const inputLoanAmount = document.querySelector(".form__input--loan-amount");
 const inputCloseUsername = document.querySelector(".form__input--user");
 const inputClosePin = document.querySelector(".form__input--pin");
 
+//!Accounts Transactions
 const displayMovements = function (movements) {
   containerMovements.innerHTML = "";
 
@@ -82,10 +83,34 @@ const displayMovements = function (movements) {
 };
 
 displayMovements(account1.movements);
+
+//! accounts balance
+
+const calcBalance = movements => {
+  const balance = movements.reduce((acc, move) => acc + move, 0);
+  labelBalance.textContent = `${balance} EUR`;
+};
+
+calcBalance(account1.movements);
+
+//! Accounts username
+
+const createusername = accs => {
+  accs.forEach(acc => {
+    acc.username = acc.owner
+      .toLowerCase()
+      .split(" ")
+      .map(name => name[0])
+      .join("");
+  });
+};
+
+createusername(accounts);
+// console.log(accounts);
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 
-/*
 //!Data transformation(map, filter, reduce)
 
 //!Map method
@@ -122,19 +147,19 @@ console.log("");
 
 //*computing usernames with map methods
 
-const createusername = accs => {
-  accs.forEach(acc => {
-    acc.username = acc.owner
-      .toLowerCase()
-      .split(" ")
-      .map(name => name[0])
-      .join("");
-  });
-};
+// const createusername = accs => {
+//   accs.forEach(acc => {
+//     acc.username = acc.owner
+//       .toLowerCase()
+//       .split(" ")
+//       .map(name => name[0])
+//       .join("");
+//   });
+// };
 
-createusername(accounts);
-console.log(accounts);
-console.log("");
+// createusername(accounts);
+// console.log(accounts);
+// console.log("");
 
 //!Filter method
 //* Used to filter for elements that satisfy a certain condition
@@ -157,6 +182,31 @@ const balance = movements.reduce((acc, move) => acc + move, 0);
 
 console.log(balance);
 
+//*finding maximum value in a array
+
+const max = movements.reduce((acc, move) => {
+  if (acc > move) {
+    return acc;
+  } else {
+    return move;
+  }
+}, movements[0]);
+
+console.log(max);
+
+//* finding minimum value in a array
+
+const min = movements.reduce((acc, move) => {
+  if (acc < move) {
+    return acc;
+  } else {
+    return move;
+  }
+}, movements[0]);
+
+console.log(min);
+
+/*
 //!coding challenge
 
 const julia1 = [3, 5, 2, 12, 7];
