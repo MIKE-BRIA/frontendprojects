@@ -213,12 +213,43 @@ btnTransfer.addEventListener("click", e => {
   console.log(currentAccount, recacc);
 });
 
+//*Requesting a loan
+
+btnLoan.addEventListener("click", e => {
+  e.preventDefault();
+
+  const amount = Number(inputLoanAmount.value);
+
+  if (amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)) {
+    currentAccount.movements.push(amount);
+
+    //updateUi
+
+    updateUI(currentAccount);
+  }
+
+  inputLoanAmount.value = "";
+});
 //* Close account
 
 btnClose.addEventListener("click", e => {
   e.preventDefault();
 
-  console.log("deleted");
+  if (
+    inputCloseUsername.value === currentAccount.username &&
+    Number(inputClosePin.value) === currentAccount.pin
+  ) {
+    const index = accounts.findIndex(
+      acc => acc.username === currentAccount.username
+    );
+
+    console.log(index);
+
+    accounts.splice(index, 1);
+
+    containerApp.style.opacity = 0;
+  }
+  console.log(accounts);
 });
 
 /////////////////////////////////////////////////
