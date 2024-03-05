@@ -73,7 +73,7 @@ const displayMovements = function (movements) {
         <div class="movements__type movements__type--${type}">${
       i + 1
     } ${type}</div>
-        <div class="movements__value">${mov}</div>
+        <div class="movements__value">💲${mov}</div>
       </div>    
     `;
 
@@ -82,16 +82,17 @@ const displayMovements = function (movements) {
   });
 };
 
-displayMovements(account1.movements);
+// displayMovements(account1.movements);
 
 //! accounts balance
 
-const calcBalance = movements => {
-  const balance = movements.reduce((acc, move) => acc + move, 0);
-  labelBalance.textContent = `${balance} EUR`;
+const calcBalance = acc => {
+  acc.balance = acc.movements.reduce((acc, move) => acc + move, 0).toFixed(2);
+  // acc.balance = balance;
+  labelBalance.textContent = `💲${acc.balance} `;
 };
 
-calcBalance(account1.movements);
+// calcBalance(account1.movements);
 
 //! Accounts username
 
@@ -108,9 +109,121 @@ const createusername = accs => {
 createusername(accounts);
 // console.log(accounts);
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
+//! calc accounts summary
 
+//*deposits,withdrawals and interest
+
+const calcSummary = acc => {
+  const income = acc.movements
+    .filter(move => move > 0)
+    .reduce((acc, move) => acc + move, 0)
+    .toFixed(2);
+
+  labelSumIn.textContent = `💲${income}`;
+  // return income;
+
+  const withdrawal = acc.movements
+    .filter(move => move < 0)
+    .reduce((acc, move) => acc + move, 0)
+    .toFixed(2);
+
+  labelSumOut.textContent = `💲${Math.abs(withdrawal)}`;
+
+  const interest = acc.movements
+    .filter(move => move > 0)
+    .map(move => (move * acc.interestRate) / 100)
+    .filter(move => move > 1)
+    .reduce((acc, move) => acc + move, 0)
+    .toFixed(2);
+
+  labelSumInterest.textContent = `💲${interest}`;
+};
+
+//*function to update Ui
+
+const updateUI = acc => {
+  //display movements
+  displayMovements(acc.movements);
+  //display balance
+  calcBalance(acc);
+  //display summary
+  calcSummary(acc);
+};
+
+// calcSummary(account1.movements);
+
+//! Event handlers
+
+//*Login
+let currentAccount;
+
+btnLogin.addEventListener("click", e => {
+  e.preventDefault();
+
+  currentAccount = accounts.find(
+    acc => acc.username === inputLoginUsername.value
+  );
+
+  if (currentAccount?.pin === Number(inputLoginPin.value)) {
+    //display Ui and message
+    labelWelcome.textContent = `Welcome back ${
+      currentAccount.owner.split(" ")[0]
+    }`;
+
+    containerApp.style.opacity = 100;
+    inputLoginPin.value = "";
+    inputLoginUsername.value = "";
+
+    inputLoginPin.blur();
+
+    updateUI(currentAccount);
+
+    console.log("login");
+  }
+});
+// console.log(currentAccount);
+
+//*Transfer money
+
+btnTransfer.addEventListener("click", e => {
+  e.preventDefault();
+
+  const amount = Number(inputTransferAmount.value);
+  const recacc = accounts.find(acc => acc.username === inputTransferTo.value);
+
+  console.log(amount, recacc);
+
+  inputTransferTo.value = "";
+  inputTransferAmount.value = "";
+  if (
+    amount > 0 &&
+    recacc &&
+    currentAccount.balance >= amount &&
+    recacc?.username !== currentAccount.username
+  ) {
+    // console.log("transferred");
+    currentAccount.movements.push(-amount);
+    recacc.movements.push(amount);
+
+    updateUI(currentAccount);
+    // updateUI(recacc);
+  }
+
+  console.log(recacc.balance);
+  console.log(currentAccount, recacc);
+});
+
+//* Close account
+
+btnClose.addEventListener("click", e => {
+  e.preventDefault();
+
+  console.log("deleted");
+});
+
+/////////////////////////////////////////////////
+/////////////////////////////////////////////////
+/*
 //!Data transformation(map, filter, reduce)
 
 //!Map method
@@ -206,7 +319,24 @@ const min = movements.reduce((acc, move) => {
 
 console.log(min);
 
+//!Chaining methods
+//*putting a bunch of methods together
+
+//adding the positive movements
+
+//PIPELINE
+const totaldepositinUSD = movements
+  .filter(move => move > 0)
+  .map(move => move * eurToUsd)
+  .reduce((acc, move) => acc + move, 0)
+  .toFixed(2);
+
+console.log(totaldepositinUSD);
+
+*/
+
 /*
+
 //!coding challenge
 
 const julia1 = [3, 5, 2, 12, 7];
@@ -243,28 +373,34 @@ dogs.forEach((dog, i) => {
 const data1 = [5, 2, 4, 1, 15, 8, 3];
 const data2 = [16, 6, 10, 5, 6, 1, 4];
 
-const calcAveragHumAge = function (data) {
-  const humanage = data.map(dt => (dt <= 2 ? 2 * dt : 16 + dt * 4));
-  console.log(humanage);
+// const calcAveragHumAge = function (data) {
+//   const humanage = data.map(dt => (dt <= 2 ? 2 * dt : 16 + dt * 4));
+//   console.log(humanage);
 
-  const filteredage = humanage.filter(dt => dt >= 18);
-  console.log(filteredage);
+//   const filteredage = humanage.filter(dt => dt >= 18);
+//   console.log(filteredage);
 
-  const aveg =
-    filteredage.reduce((acc, ftage) => acc + ftage, 0) / filteredage.length;
-  return aveg;
-};
+//   const aveg =
+//     filteredage.reduce((acc, ftage) => acc + ftage, 0) / filteredage.length;
+//   return aveg;
+// };
+
+const calcAveragHumAge = data =>
+  data
+    .map(dt => (dt <= 2 ? 2 * dt : 16 + dt * 4))
+    .filter(dt => dt >= 18)
+    .reduce((acc, dt, i, arr) => acc + dt / arr.length, 0);
 
 console.log(calcAveragHumAge(data2));
 
 // LECTURES
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
 //! Looping arrays(for each)
 
-
+/*
 //* for of
 
 // for (const movement of movements) {
