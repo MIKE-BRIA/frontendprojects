@@ -184,7 +184,7 @@ btnLogin.addEventListener('click', e => {
     acc => acc.username === inputLoginUsername.value
   );
 
-  if (currentAccount?.pin === Number(inputLoginPin.value)) {
+  if (currentAccount?.pin === +inputLoginPin.value) {
     //display Ui and message
     labelWelcome.textContent = `Welcome back ${
       currentAccount.owner.split(' ')[0]
@@ -208,7 +208,7 @@ btnLogin.addEventListener('click', e => {
 btnTransfer.addEventListener('click', e => {
   e.preventDefault();
 
-  const amount = Number(inputTransferAmount.value);
+  const amount = +inputTransferAmount.value;
   const recacc = accounts.find(acc => acc.username === inputTransferTo.value);
 
   console.log(amount, recacc);
@@ -238,7 +238,7 @@ btnTransfer.addEventListener('click', e => {
 btnLoan.addEventListener('click', e => {
   e.preventDefault();
 
-  const amount = Number(inputLoanAmount.value);
+  const amount = +inputLoanAmount.value;
 
   if (amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)) {
     currentAccount.movements.push(amount);
@@ -257,7 +257,7 @@ btnClose.addEventListener('click', e => {
 
   if (
     inputCloseUsername.value === currentAccount.username &&
-    Number(inputClosePin.value) === currentAccount.pin
+    +inputClosePin.value === currentAccount.pin
   ) {
     const index = accounts.findIndex(
       acc => acc.username === currentAccount.username
@@ -286,3 +286,38 @@ btnSort.addEventListener('click', e => {
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
+//!Numbers
+//*conversion
+console.log(Number('243'));
+console.log(+'12');
+
+//*parsing
+console.log(Number.parseInt('30px', 10));
+console.log(Number.parseInt('2.3rem'));
+console.log(Number.parseFloat('2.3rem'));
+console.log(Number.parseFloat('28rem'));
+
+//*isFinite
+//*used to check if a value is a number or not
+console.log(Number.isFinite(20));
+console.log(Number.isFinite('20'));
+console.log(Number.isFinite(+'20'));
+
+//!mathematical operations
+
+//*squareroot(sqrt)
+
+console.log(Math.sqrt(25));
+console.log(25 ** (1 / 2));
+
+//*maximum value && minimum value
+
+console.log(Math.max(3, 45, 12, 8, 9, 20, 14));
+console.log(Math.max(3, 12, 8, 9, '56', 20, 14));
+console.log(Math.min(3, 12, 8, 9, '56', 20, 14));
+console.log(Math.min(-1, 32, 3, 13, 1, 5, 6, -23, 45));
+
+//*working out radius
+//*Math.PI
+
+console.log(Math.PI * Number.parseFloat('14px') ** 2);
