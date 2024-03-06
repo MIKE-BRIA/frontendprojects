@@ -419,6 +419,20 @@ movements.sort((a, b) => b - a);
 
 console.log(movements);
 
+//!new Array
+
+const y = new Array(7);
+console.log(y);
+y.fill(1);
+console.log(y);
+
+//!Array.from
+
+const p = Array.from({ length: 7 }, () => 1);
+console.log(p);
+const z = Array.from({ length: 7 }, (_, i) => i + 1);
+console.log(z);
+
 /*
 
 //!coding challenge
