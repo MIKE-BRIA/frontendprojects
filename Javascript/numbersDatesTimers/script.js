@@ -79,6 +79,18 @@ const inputLoanAmount = document.querySelector(".form__input--loan-amount");
 const inputCloseUsername = document.querySelector(".form__input--user");
 const inputClosePin = document.querySelector(".form__input--pin");
 
+const formatMovementDate = function (date) {
+  // const date = new Date(acc.movementsDates[i]);
+  const day = `${date.getDate()}`.padStart(2, 0);
+  const month = `${date.getMonth() + 1}`.padStart(2, 0);
+  const year = date.getFullYear();
+
+   = `${day}/${month}/${year}`;
+
+  const calcDatePass = (date1, date2) =>
+    Math.abs(date2 - date1) / (1000 * 60 * 60 * 24);
+};
+
 //!Accounts Transactions
 const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = "";
@@ -91,11 +103,8 @@ const displayMovements = function (acc, sort = false) {
     const type = mov > 0 ? "deposit" : "withdrawal";
 
     const date = new Date(acc.movementsDates[i]);
-    const day = `${date.getDate()}`.padStart(2, 0);
-    const month = `${date.getMonth() + 1}`.padStart(2, 0);
-    const year = date.getFullYear();
+    const displayDate= formatMovementDate()
 
-    const displayDate = `${day}/${month}/${year}`;
     // const hour = Now.getHours();
     // const minute = Now.getMinutes();
 
@@ -191,9 +200,9 @@ let currentAccount;
 
 //* Making us always logged in
 
-// currentAccount = account1;
-// updateUI(currentAccount);
-// containerApp.style.opacity = 100;
+currentAccount = account1;
+updateUI(currentAccount);
+containerApp.style.opacity = 100;
 
 // Now.toISOString();
 
@@ -420,3 +429,10 @@ console.log(now.toISOString());
 console.log("");
 
 //!operation with dates
+
+const future = new Date(2037, 10, 19, 15, 23);
+
+const calcDatePass = (date1, date2) =>
+  Math.abs(date2 - date1) / (1000 * 60 * 60 * 24);
+
+console.log(calcDatePass(new Date(2024, 3, 7), new Date(2024, 11, 30)));
