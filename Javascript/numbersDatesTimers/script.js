@@ -80,15 +80,17 @@ const inputCloseUsername = document.querySelector(".form__input--user");
 const inputClosePin = document.querySelector(".form__input--pin");
 
 const formatMovementDate = function (date) {
+  const calcDatePassed = (date1, date2) =>
+    Math.abs(date2 - date1) / (1000 * 60 * 60 * 24);
+
+  const daysPassed = (new Date(), date);
+  console.log(daysPassed);
   // const date = new Date(acc.movementsDates[i]);
   const day = `${date.getDate()}`.padStart(2, 0);
   const month = `${date.getMonth() + 1}`.padStart(2, 0);
   const year = date.getFullYear();
 
-   = `${day}/${month}/${year}`;
-
-  const calcDatePass = (date1, date2) =>
-    Math.abs(date2 - date1) / (1000 * 60 * 60 * 24);
+  return `${day}/${month}/${year}`;
 };
 
 //!Accounts Transactions
@@ -103,7 +105,7 @@ const displayMovements = function (acc, sort = false) {
     const type = mov > 0 ? "deposit" : "withdrawal";
 
     const date = new Date(acc.movementsDates[i]);
-    const displayDate= formatMovementDate()
+    const displayDate = formatMovementDate();
 
     // const hour = Now.getHours();
     // const minute = Now.getMinutes();
@@ -200,9 +202,9 @@ let currentAccount;
 
 //* Making us always logged in
 
-currentAccount = account1;
-updateUI(currentAccount);
-containerApp.style.opacity = 100;
+// currentAccount = account1;
+// updateUI(currentAccount);
+// containerApp.style.opacity = 100;
 
 // Now.toISOString();
 
