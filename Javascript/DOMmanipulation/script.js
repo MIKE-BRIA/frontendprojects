@@ -30,6 +30,36 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
+//*Smooth scrolling
+
+const btnScrollTo = document.querySelector(".btn--scroll-to");
+const section1 = document.getElementById("section--1");
+
+btnScrollTo.addEventListener("click", e => {
+  e.preventDefault();
+
+  //*old way of scrolling
+  // const s1coords = section1.getBoundingClientRect();
+
+  // //scrolling
+  // // window.scrollTo(
+  // //   s1coords.left + window.pageXOffset,
+  // //   s1coords.top + window.pageYOffset
+  // // );
+
+  // //smooth scrolling
+  // window.scrollTo({
+  //   left: s1coords.left + window.pageXOffset,
+  //   top: s1coords.top + window.pageYOffset,
+  //   behavior: "smooth",
+  // });
+
+  //*new way of scrolling
+
+  section1.scrollIntoView({ behavior: "smooth" });
+});
+/*
+
 //!Selecting Elements
 const header = document.querySelector(".header");
 document.querySelectorAll(".btn");
@@ -66,3 +96,31 @@ document
 //!styles
 message.style.backgroundColor = "#37383d";
 message.style.width = "130%";
+
+console.log(getComputedStyle(message).color);
+console.log(getComputedStyle(message).height);
+
+message.style.height =
+  Number.parseFloat(getComputedStyle(message).height, 10) + 20 + "px";
+
+//!Attributes
+const logo = document.querySelector(".nav__logo");
+
+//standard attributes
+console.log(logo.src);
+console.log(logo.alt);
+
+//Non-standard attributes
+console.log(logo.getAttribute("designer"));
+logo.setAttribute("company", "Bankist");
+
+console.log(logo.src);
+console.log(logo.getAttribute("src"));
+
+//!Classes
+
+logo.classList.add("c");
+logo.classList.remove("c");
+logo.classList.toggle("c");
+logo.classList.contains("c");
+*/
