@@ -7,6 +7,8 @@ const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".btn--close-modal");
 const btnsOpenModal = document.querySelectorAll(".btn--show-modal");
+const btnScrollTo = document.querySelector(".btn--scroll-to");
+const section1 = document.getElementById("section--1");
 
 const openModal = function (e) {
   e.preventDefault();
@@ -32,9 +34,6 @@ document.addEventListener("keydown", function (e) {
 
 //*Smooth scrolling
 
-const btnScrollTo = document.querySelector(".btn--scroll-to");
-const section1 = document.getElementById("section--1");
-
 btnScrollTo.addEventListener("click", e => {
   e.preventDefault();
 
@@ -58,6 +57,31 @@ btnScrollTo.addEventListener("click", e => {
 
   section1.scrollIntoView({ behavior: "smooth" });
 });
+
+//! Event delegation(page navigation) with smooth scrolling
+
+document.querySelectorAll(".nav__link").forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    const id = link.getAttribute("href");
+    console.log(id);
+    document.querySelector(id).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
+/*
+// rgb(255, 255, 255);
+
+//*generating a randomcolor
+
+const randomInt = (min, max) =>
+  Math.floor(Math.random() * (max - min + 1) + min);
+const randomcolor = () =>
+  `rgb(${randomInt(0, 255)}, ${randomInt(0, 255)}, ${randomInt(0, 255)})`;
+
+console.log(randomcolor(0, 255));
 /*
 
 //!Selecting Elements
