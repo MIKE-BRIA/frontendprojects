@@ -60,17 +60,59 @@ btnScrollTo.addEventListener("click", e => {
 
 //! Event delegation(page navigation) with smooth scrolling
 
-document.querySelectorAll(".nav__link").forEach(link => {
-  link.addEventListener("click", e => {
-    e.preventDefault();
-    const id = link.getAttribute("href");
+// document.querySelectorAll(".nav__link").forEach(link => {
+//   link.addEventListener("click", e => {
+//     e.preventDefault();
+//     const id = link.getAttribute("href");
+//     console.log(id);
+//     document.querySelector(id).scrollIntoView({
+//       behavior: "smooth",
+//     });
+//   });
+// });
+
+//*call eventlistners from the parent elements
+
+document.querySelector(".nav__links").addEventListener("click", e => {
+  e.preventDefault();
+
+  if (e.target.classList.contains("nav__link")) {
+    const id = e.target.getAttribute("href");
     console.log(id);
-    document.querySelector(id).scrollIntoView({
-      behavior: "smooth",
-    });
-  });
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
 });
 
+//! Tabbed componenet
+
+const tabsContainer = document.querySelector(".operations__tab-container");
+const tabs = document.querySelectorAll(".operations__tab");
+const tabsContent = document.querySelectorAll(".operations__content");
+
+tabsContainer.addEventListener("click", e => {
+  e.preventDefault();
+  const clicked = e.target.closest(".operations__tab");
+
+  if (!clicked) return;
+
+  //remove active classes
+  tabs.forEach(tab => tab.classList.remove("operations__tab--active"));
+  tabsContent.forEach(content =>
+    content.classList.remove("operations__content--active")
+  );
+
+  //active tab
+  clicked.classList.add("operations__tab--active");
+
+  //activate content area
+
+  document
+    .querySelector(`.operations__content--${clicked.dataset.tab}`)
+    .classList.add("operations__content--active");
+});
+// tabs.forEach(tab => {
+//   tab.addEventListener("click", () => console.log("clicked"));
+// });
 /*
 // rgb(255, 255, 255);
 
@@ -147,4 +189,33 @@ logo.classList.add("c");
 logo.classList.remove("c");
 logo.classList.toggle("c");
 logo.classList.contains("c");
+
+
+//! Dom traversing
+
+const h1 = document.querySelector("h1");
+
+//*Going downwards: child nodes
+
+console.log(h1.querySelectorAll(".highlight"));
+console.log(h1.childNodes);
+console.log(h1.children);
+h1.firstElementChild.style.color = "yellow";
+h1.lastElementChild.style.color = "orangered";
+
+//* going upwards: parent nodes
+
+console.log(h1.parentNode);
+console.log(h1.parentElement);
+
+h1.closest(".header").style.background = "var(--gradient-secondary)";
+console.log(h1.closest(".header"));
+
+//*going sideways: siblings
+
+console.log(h1.previousElementSibling);
+console.log(h1.nextElementSibling);
+
+//all the siblings
+console.log(h1.parentElement.children);
 */
