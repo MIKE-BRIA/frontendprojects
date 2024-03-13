@@ -67,17 +67,42 @@ Carcl.prototype.acc = function () {
 };
 
 Carcl.prototype.brake = function () {
-  const newspeed = this.speed - 5;
-  console.log(`${this.make} going at ${newspeed}`);
+  this.speed -= 15;
+  console.log(`${this.make} going at ${this.speed}`);
 };
 
+//* creating the EV as a child of Carcl
 const EV = function (make, speed, charge) {
   Carcl.call(this, make, speed, speed);
   this.charge = charge;
 };
 
+//* linking the EV and Carcl classes
+EV.prototype = Object.create(Carcl.prototype);
+
+//*chargebattery function
+EV.prototype.chargeBattery = function (chargeTo) {
+  this.charge = chargeTo;
+};
+
+//* EV accelerate and charge drop
+
+EV.prototype.accelerate = function () {
+  this.speed += 20;
+  this.charge--;
+  console.log(
+    `${this.make} is going at ${this.speed}km/hr with a charge of ${this.charge}`
+  );
+};
+
 const AlfaRomeo = new Carcl("AlfaRomeo", 120);
 const Mercedes = new Carcl("Mercedes", 95);
+const tesla = new EV("Tesla", 120, 23);
+tesla.chargeBattery(100);
+
+console.log(tesla);
+tesla.brake();
+tesla.accelerate();
 AlfaRomeo.acc();
 AlfaRomeo.brake();
 console.log("");
@@ -195,3 +220,76 @@ Member.hey();
 //* That is to mean not all object can access static methodss
 
 //
+
+//! Inheritance from the members class
+
+class Studentcl extends Member {
+  constructor(fullname, birthYear, course) {
+    super(fullname, birthYear); //always happens first
+    this.course = course;
+  }
+
+  introduce() {
+    console.log(`My name is ${this.fullname} and i study ${this.course}`);
+  }
+}
+
+const Martha = new Studentcl("Martha Smith", 1999, "Computer Science");
+console.log(Martha);
+Martha.introduce();
+
+console.log("");
+
+//! Another class example
+
+class Account {
+  //*Private fields
+  #movements = new Array();
+  #pin;
+
+  constructor(owner, currency, pin) {
+    this.owner = owner;
+    this.currency = currency;
+    //protected
+    this.#pin = pin;
+    // this._movements = new Array();
+    this.locale = navigator.language;
+
+    console.log(`Thanks for openning a new account with us, ${owner}`);
+  }
+
+  getmovements() {
+    return this.#movements;
+  }
+
+  deposit(value) {
+    this.#movements.push(value);
+  }
+
+  withdraw(value) {
+    this.deposit(-value);
+  }
+
+  _approveLoan(value) {
+    return true;
+  }
+
+  requestLoan(value) {
+    if (this._approveLoan(value)) {
+      this.deposit(value);
+      console.log(`Your loan has been successfully approved`);
+    }
+  }
+}
+
+const acc1 = new Account("Mike Busman", "USD", 2222);
+// console.log(acc1);
+// acc1.movements.push(250);
+
+acc1.requestLoan(2000);
+acc1.deposit(450);
+acc1.withdraw(100);
+console.log(acc1.getmovements());
+
+console.log(acc1);
+// console.log(acc1.#movements);
