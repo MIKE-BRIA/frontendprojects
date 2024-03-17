@@ -180,9 +180,10 @@ class App {
 
     //*render workout on map as marker
 
-    this.renderWorkoutMarker(workout);
+    this._renderWorkoutMarker(workout);
 
     //*Render workout on list
+    this._renderWorkout(workout);
 
     //*Hide the form + clear input fields
     inputDistance.value =
@@ -193,7 +194,7 @@ class App {
   }
 
   //*Render workout on map as marker
-  renderWorkoutMarker(workout) {
+  _renderWorkoutMarker(workout) {
     L.marker(workout.coords)
       .addTo(this.#map)
       .bindPopup(
@@ -207,6 +208,26 @@ class App {
       )
       .setPopupContent('workout.distance')
       .openPopup();
+  }
+
+  //*Render Workout on list
+  _renderWorkout(workout) {
+    const html = `
+    <li class="workout workout--${workout.type}" data-id="${workout.id}">
+          <h2 class="workout__title">Running on April 14</h2>
+          <div class="workout__details">
+            <span class="workout__icon">${
+              workout.type === 'running' ? '🏃‍♂️' : '🚴‍♀️'
+            }</span>
+            <span class="workout__value">${workout.distance}</span>
+            <span class="workout__unit">km</span>
+          </div>
+          <div class="workout__details">
+            <span class="workout__icon">⏱</span>
+            <span class="workout__value">${workout.duration}</span>
+            <span class="workout__unit">min</span>
+          </div>
+    `;
   }
 }
 
