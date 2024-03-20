@@ -137,7 +137,7 @@ const getCountryData = function (country) {
 };
 
 getCountryData("kenya");
-*/
+
 
 //* microtask queue have a high priority(promises) over callback queue
 
@@ -146,8 +146,68 @@ setTimeout(() => console.log("0 sec timer"), 0);
 Promise.resolve("Resolved promise 1").then(res => console.log(res));
 
 Promise.resolve("Resolved promise 2").then(res => {
-  for (let i = 0; 1 < 1000; i++) {
-    console.log(res);
-  }
+  for (let i = 0; 1 < 100; i++) {}
+  console.log(res);
 });
 console.log("Test end");
+
+
+const lotteryPromise = new Promise((resolve, reject) => {
+  console.log("The Lottery is about to begin ⏱️");
+  setTimeout(function () {
+    if (Math.random() >= 0.5) {
+      resolve("YOU WIN 💶");
+    } else {
+      reject(new Error("YOU LOST YOUR MONEY 💩"));
+    }
+  });
+});
+
+lotteryPromise.then(res => console.log(res)).catch(err => console.log(err));
+
+//*promisifying setTimeout
+
+const wait = seconds =>
+  new Promise(resolve => setTimeout(resolve, seconds * 1000));
+
+wait(3)
+  .then(() => {
+    console.log("I waited for three seconds");
+    return wait(2);
+  })
+  .then(() => console.log("I waited for two seconds"));
+
+console.log("hello");
+
+const getPosition = function () {
+  return new Promise(function (resolve, reject) {
+    navigator.geolocation.getCurrentPosition(resolve, reject);
+  });
+};
+
+const whereAmI = async function (country) {
+  try {
+    //Geolocation
+    const pos = await getPosition();
+    const { latitude: lat, longitude: lng } = pos.coords;
+
+    //Reverse geocoding
+    const resGeo = await fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`);
+    console.log(resGeo);
+    const dataGeo = await resGeo.json();
+    console.log(dataGeo);
+
+    //Country data
+    const res = await fetch(`https://restcountries.com/v3.1/name/${country}`);
+    console.log(res);
+    const data = await res.json();
+    console.log(data);
+    renderCountry(data[0]);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+whereAmI("Kenya");
+console.log("hello watu wangu");
+*/
