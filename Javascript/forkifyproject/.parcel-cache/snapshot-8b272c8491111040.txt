@@ -9617,11 +9617,11 @@
 101C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\.bin\sass.cmd133554062789946723 0
 103C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\.bin\semver.cmd133554061887175333 0
 101C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\.bin\svgo.cmd133554061887165348 0
-110C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\forkifyproject.3464ddca.js.map133554095152695700 0
-101C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.62406edb.js.map133554099850471127 0
 100C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\favicon.8b2f57bf.png133554748843521404 0
-90C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.html133554748843736470 0
-98C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\icons.dfd7a6db.svg133554748843756516 0
+110C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\forkifyproject.3464ddca.js.map133554095152695700 0
 98C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\icons.21bad73c.svg133554748843756516 0
-97C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\logo.726d37a8.png133554748843766491 0
+98C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\icons.dfd7a6db.svg133554748843756516 0
+101C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.62406edb.js.map133554099850471127 0
 102C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.f7626f62.css.map133554748843836529 0
+90C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.html133554748843736470 0
+97C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\logo.726d37a8.png133554748843766491 0
