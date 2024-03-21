@@ -7,12 +7,15 @@ import "core-js/stable";
 import "regenerator-runtime/runtime";
 
 // https://forkify-api.herokuapp.com/v2
+if (module.hot) {
+  module.hot.accept;
+}
 
 const controlRecipe = async function () {
   try {
     //!main menu bar
     const id = window.location.hash.slice(1);
-    console.log(id);
+    // console.log(id);
 
     if (!id) return;
 
@@ -35,7 +38,7 @@ const controlSearchResults = async function () {
   try {
     //! Side menu bar
     resultsView.renderSpinner();
-    console.log(resultsView);
+    // console.log(resultsView);
 
     //*get search query
     const query = searchView.getQuery();
@@ -45,9 +48,9 @@ const controlSearchResults = async function () {
     await model.loadSearchResults(query);
 
     //*render search results
-    console.log(model.state.search.results);
+    // console.log(model.state.search.results);
 
-    resultsView.render(model.state.search.results);
+    resultsView.render(model.getSearchResultsPage(1)); //
   } catch (error) {
     console.log(error);
   }
