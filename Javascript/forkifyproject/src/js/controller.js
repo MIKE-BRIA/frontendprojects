@@ -1,16 +1,11 @@
 import * as model from "./model.js";
 import recipeView from "./views/recipeView.js";
+import searchView from "./views/searchView.js";
 
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 
-// console.log(icons);
-
-const recipeContainer = document.querySelector(".recipe");
-
 // https://forkify-api.herokuapp.com/v2
-
-///////////////////////////////////////
 
 const controlRecipe = async function () {
   try {
@@ -28,16 +23,30 @@ const controlRecipe = async function () {
     //* Rendering recipe
 
     recipeView.render(recipe);
-  } catch (err) {
-    alert(err);
+  } catch (error) {
+    recipeView.renderError();
+  }
+};
+
+const controlSearchResults = async function () {
+  try {
+    const query = searchView.getQuery();
+    if (!query) return;
+
+    await model.loadSearchResults(query);
+    console.log(model.state.search.results);
+  } catch (error) {
+    console.log(error);
   }
 };
 
 // controlRecipe();
+const init = function () {
+  recipeView.addHandlerRender(controlRecipe);
+  searchView.addHandlerSearch(controlSearchResults);
+};
 
-["hashchange", "load"].forEach(event =>
-  window.addEventListener(event, controlRecipe)
-);
+init();
 // window.addEventListener("hashchange", controlRecipe);
 // window.addEventListener("load", controlRecipe);
 console.log("I am arround");
