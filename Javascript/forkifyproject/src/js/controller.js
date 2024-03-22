@@ -3,6 +3,7 @@ import recipeView from "./views/recipeView.js";
 import searchView from "./views/searchView.js";
 import resultsView from "./views/resultsView.js";
 import paginationView from "./views/paginationView.js";
+import bookmarksView from "./views/bookmarksView.js";
 
 import "core-js/stable";
 import "regenerator-runtime/runtime";
@@ -21,6 +22,10 @@ const controlRecipe = async function () {
     if (!id) return;
 
     recipeView.renderSpinner();
+
+    //*update results view to mark selected search result
+    resultsView.update(model.getSearchResultsPage());
+    bookmarksView.update(model.state.bookmarks);
 
     //*loading recipe
     await model.loadRecipe(id);
@@ -76,13 +81,35 @@ const controlServings = function (newServings) {
   model.updateServings(newServings);
 
   //update the recipe view
-  recipeView.render(model.state.recipe);
+  // recipeView.render(model.state.recipe);
+  recipeView.update(model.state.recipe);
 };
 
-// controlRecipe();
+//*function for dealing with bookmarks
+const controlAddBookmark = function () {
+  // 1) Add/remove bookmarks
+  if (!model.state.recipe.bookmarked) {
+    model.addBookmark(model.state.recipe);
+  } else {
+    model.deleteBookmark(model.state.recipe.id);
+  }
+
+  // 2) Update recipe view
+  recipeView.update(model.state.recipe);
+
+  // 3) Render bookmarks
+  bookmarksView.render(model.state.bookmarks);
+};
+
+const controlBookmarks = function () {
+  bookmarksView.render(model.state.bookmarks);
+};
+
 const init = function () {
+  bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipe);
   recipeView.addHandlerUpdateServings(controlServings);
+  recipeView.addHandlerAddBookmark(controlAddBookmark);
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
 };
@@ -90,5 +117,5 @@ const init = function () {
 init();
 // window.addEventListener("hashchange", controlRecipe);
 // window.addEventListener("load", controlRecipe);
-console.log("I am arround");
-console.log("helloo");
+// console.log("I am arround");
+// console.log("helloo");
