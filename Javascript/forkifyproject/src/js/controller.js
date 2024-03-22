@@ -5,6 +5,7 @@ import resultsView from "./views/resultsView.js";
 import paginationView from "./views/paginationView.js";
 import bookmarksView from "./views/bookmarksView.js";
 import addRecipeView from "./views/addRecipeView.js";
+import { MODAL_CLOSE_SEC } from "./config.js";
 
 import "core-js/stable";
 import "regenerator-runtime/runtime";
@@ -82,7 +83,6 @@ const controlServings = function (newServings) {
   model.updateServings(newServings);
 
   //update the recipe view
-  // recipeView.render(model.state.recipe);
   recipeView.update(model.state.recipe);
 };
 
@@ -107,12 +107,34 @@ const controlBookmarks = function () {
 };
 
 //*function that handle adding of recipe
-
+/**
+ * Add your own recipe
+ * finish implementation for saving the added new recipe
+ */
 const controlAddRecipe = async function (newRecipe) {
   // console.log(newRecipe);
   try {
+    addRecipeView.renderSpinner();
     //Upload new Recipe data
     await model.uploadRecipe(newRecipe);
+    console.log(model.state.recipe);
+
+    //render recipe
+    recipeView.render(model.state.recipe);
+
+    //success message
+    addRecipeView.renderMessage();
+
+    //Render bookmarks view
+    bookmarksView.render(model.state.bookmarks);
+
+    //change ID in URL
+    window.history.pushState(null, "", `#${model.state.recipe.id}`);
+
+    //Close form window
+    setTimeout(function () {
+      addRecipeView.toggleWindow();
+    }, MODAL_CLOSE_SEC * 1000);
   } catch (err) {
     console.error("🤯", err);
     addRecipeView.renderError(err.message);

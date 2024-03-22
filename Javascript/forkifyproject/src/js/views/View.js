@@ -90,7 +90,7 @@ export default class View {
   }
 
   //*Success Message
-  renderMessage(message = this._SuccessMessage) {
+  renderMessage(message = this._message) {
     const markup = `
         <div class="message">
           <div>
