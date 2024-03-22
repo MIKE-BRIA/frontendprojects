@@ -1,4 +1,4 @@
-9626
+9627
 152C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@swc\helpers\esm\_class_check_private_static_field_descriptor.js133554061770403526 0
 111C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\semver\classes\range.js133554061719937018 0
 103C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\forkify-flowchart-part-1.png133554018005776123 0
@@ -35,7 +35,7 @@
 120C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\stable\number\epsilon.js133554115394056383 0
 130C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\stable\string\virtual\ends-with.js133554115393617344 0
 123C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\lmdb\dependencies\lz4\lib\README.md133554061773064503 0
-95C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\controller.js133554761346926832 0
+95C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\controller.js133555536892301751 0
 124C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\caniuse-lite\data\features\tls1-2.js133554061884999522 0
 127C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\stable\reflect\to-string-tag.js133554115482114885 0
 123C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\full\instance\find-index.js133554115420056297 0
@@ -50,7 +50,7 @@
 96C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\svgo\lib133554061717604640 1
 136C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\internals\iterator-create-constructor.js133554115447024860 0
 122C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\modules\esnext.set.some.js133554115416285845 0
-79C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist133554768825270719 1
+79C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist133555542316950625 1
 97C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\is-number133554061669655129 1
 86C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\.prettierrc133554066753426483 0
 122C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-tree\lib\syntax\atrule\nest.js133554061777794091 0
@@ -90,7 +90,7 @@
 123C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@babel\highlight\node_modules\chalk133554061680103752 1
 130C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\csso\cjs\restructure\8-restructRuleset.cjs133554061688128820 0
 121C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\features\object\assign.js133554115383808434 0
-85C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\index.html133554143267080878 0
+85C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\index.html133554927793817673 0
 113C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\full\math\log2.js133554115449606150 0
 147C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-select\node_modules\dom-serializer\lib\esm\package.json133554061680471319 0
 122C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\lmdb\dependencies\lz4\lib\xxhash.h133554061771774337 0
@@ -171,13 +171,6 @@
 119C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\transformer-raw\LICENSE133554061665645337 0
 94C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\sass\_base.scss133554017997247300 0
 124C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\full\reflect\get-metadata.js133554115436494319 0
-122C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\modules\es.regexp.flags.js133554115404710140 0
-121C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\postcss-value-parser\package.json133554061680461323 0
-128C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@swc\helpers\_\_ts_metadata\package.json133554061779747163 0
-119C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\actual\reflect\index.js133554115439656165 0
-105C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\svgo\package.json133554061718900438 0
-123C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\runtime-js\src\JSRuntime.js133554061719427098 0
-95C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js133554115485636154 1
 139C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_stat.c133554061742079502 0
 121C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\internals\shared-store.js133554115471350655 0
 93C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@lmdb133554341746772370 1
@@ -190,7 +183,7 @@
 120C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\htmlnano\lib\presets\ampSafe.cjs133554061667151307 0
 103C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\tslib\README.md133554061688048529 0
 118C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\es\typed-array\find.js133554115420691803 0
-90C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\model.js133554760340782587 0
+90C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\model.js133555524900711609 0
 124C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\internals\native-raw-json.js133554115456540062 0
 120C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\stable\symbol\species.js133554115472474601 0
 119C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\actual\object\create.js133554115390838378 0
@@ -246,7 +239,10 @@
 123C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\lightningcss-win32-x64-msvc\LICENSE133554061665348832 0
 122C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\utils\test\input\sourcemap133554061770353507 1
 129C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\actual\array\virtual\to-sorted.js133554115481439769 0
-95C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\views\View.js133554747664990016 0
+95C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\views\View.js133554937057585590 0
+118C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-what\lib\es\stringify.d.ts133554061716046023 0
+121C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\full\array\virtual\map.js133554115450228541 0
+105C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\views\paginationView.js133555503151584435 0
 98C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\semver\bin133554061723325752 1
 96C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\sass\_recipe.scss133554017995615467 0
 127C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-tree\lib\syntax\node\index-parse.js133554061774815708 0
@@ -282,7 +278,7 @@
 113C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\is-arrayish\.istanbul.yml133554061679085867 0
 116C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\modules\es.escape.js133554115397364203 0
 123C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-tree\lib\syntax\atrule\media.js133554061776554679 0
-91C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\config.js133554624825903042 0
+91C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\config.js133555507357790630 0
 137C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\csso\node_modules\css-tree\lib\tokenizer\utils.js133554061788669412 0
 119C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\actual\instance\keys.js133554115448067814 0
 127C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\caniuse-lite\data\features\classlist.js133554061767904303 0
@@ -297,12 +293,12 @@
 114C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\node-releases\package.json133554061669675036 0
 145C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\caniuse-lite\data\features\css-container-queries-style.js133554061772609782 0
 112C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\es\string\big.js133554115384625238 0
-87C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\views133554732506021302 1
+87C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\views133554976089707132 1
 127C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\full\reflect\define-property.js133554115392493779 0
 119C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\caniuse-lite\data\regions\FR.js133554061871320668 0
 123C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\internals\get-set-record.js133554115437508114 0
 112C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\es\array\join.js133554115447822671 0
-101C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\views\recipeView.js133554747831866068 0
+101C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\views\recipeView.js133555542315572971 0
 139C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\csso\node_modules\css-tree\cjs\generator\create.cjs133554061715225676 0
 118C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\mdn-data\css\units.schema.json133554061717134374 0
 130C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@swc\helpers\_\_class_private_field_update133554061775593915 1
@@ -321,7 +317,7 @@
 100C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\resolve-from133554061669624140 1
 131C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\lmdb\node_modules\node-addon-api\LICENSE.md133554061705737292 0
 132C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\modules\esnext.uint8-array.to-hex.js133554115418144861 0
-102C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\views\resultsView.js133554768824122146 0
+102C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\js\views\resultsView.js133554940301656204 0
 115C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@swc\helpers\src\_using.mjs133554061794740636 0
 121C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@swc\helpers\_\index\package.json133554061780115056 0
 117C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\lmdb\dependencies\lz4\LICENSE133554061693615895 0
@@ -337,7 +333,7 @@
 103C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\srcset\index.js133554061666421969 0
 117C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\sass\types\value\boolean.d.ts133554062788112847 0
 92C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\src\img\icons.svg133554018001465309 0
-98C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.f7626f62.css133554748843816462 0
+98C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.f7626f62.css133555541076158014 0
 129C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\modules\esnext.object.group-by.js133554115415449436 0
 120C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\postcss-value-parser\lib\walk.js133554061679539007 0
 106C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\.package-lock.json133554341748822464 0
@@ -483,6 +479,13 @@
 136C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\entities\lib\generated\decode-data-html.d.ts.map133554061699690567 0
 134C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\internals\normalize-string-argument.js133554115456560084 0
 106C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\chrome-trace-event133554061680416214 1
+122C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\modules\es.regexp.flags.js133554115404710140 0
+121C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\postcss-value-parser\package.json133554061680461323 0
+128C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@swc\helpers\_\_ts_metadata\package.json133554061779747163 0
+119C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\actual\reflect\index.js133554115439656165 0
+105C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\svgo\package.json133554061718900438 0
+123C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\runtime-js\src\JSRuntime.js133554061719427098 0
+95C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js133554115485636154 1
 135C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\modules\esnext.uint8-array.to-base64.js133554115418114616 0
 115C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\node-addon-api\node_api.gyp133554061667308162 0
 146C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-select\node_modules\dom-serializer\lib\foreignNames.js133554061670486188 0
@@ -1390,15 +1393,15 @@
 127C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\modules\esnext.composite-key.js133554115412570963 0
 100C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\sass\LICENSE133554062765432685 0
 104C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\tslib\tslib.d.ts133554061692161941 0
-118C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\es\array\virtual\at.js133554115384243565 0
-115C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\lightningcss\node\index.mjs133554061693534623 0
-115C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\htmlnano\docs\versions.json133554061744042446 0
-124C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\svgo\plugins\removeOffCanvasPaths.js133554061750200205 0
 153C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\compile.js133554061678691407 0
 117C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\es\instance\filter.js133554115419300640 0
 108C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\tslib\tslib.es6.html133554061663438788 0
 140C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\optimizer-htmlnano\node_modules\mdn-data\css133554061716937830 1
 100C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\svgo\plugins133554061753794056 1
+115C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\htmlnano\docs\versions.json133554061744042446 0
+124C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\svgo\plugins\removeOffCanvasPaths.js133554061750200205 0
+118C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\es\array\virtual\at.js133554115384243565 0
+115C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\lightningcss\node\index.mjs133554061693534623 0
 115C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\semver\functions\compare.js133554061688310653 0
 116C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\stable\array\find.js133554115420831839 0
 106C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\tslib\tslib.es6.js133554061670994714 0
@@ -1954,11 +1957,11 @@
 108C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\semver\bin\semver.js133554061724211172 0
 128C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\modules\es.symbol.unscopables.js133554115405739845 0
 124C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\modules\es.array.flat-map.js133554115395356032 0
-102C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\sass\README.md133554062788007371 0
-117C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\htmlnano\lib\presets\safe.cjs133554061716897844 0
 112C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-what\lib\es\parse.js133554061679906299 0
 122C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\sass\types\legacy\plugin_this.d.ts133554062789615250 0
 119C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@swc\helpers\_\_super_prop_base133554061779610384 1
+102C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\sass\README.md133554062788007371 0
+117C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\htmlnano\lib\presets\safe.cjs133554061716897844 0
 158C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\msgpackr-extract\node_modules\node-gyp-build-optional-packages\LICENSE133554061665835765 0
 130C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@swc\helpers\_\_apply_decorated_descriptor133554061773836242 1
 124C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\csso\lib\replace\atrule\keyframes.js133554061751001359 0
@@ -3132,7 +3135,7 @@
 127C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\utils\src\relativeBundlePath.js133554061746235008 0
 108C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\htmlnano\lib\presets133554061767643944 1
 119C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\es\number\is-integer.js133554115443336558 0
-101C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.e37f48ea.js.map133554768825260686 0
+101C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.e37f48ea.js.map133555542316940615 0
 116C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\htmlnano\lib\presets\max.cjs133554061692483371 0
 125C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\csso\cjs\replace\atrule\keyframes.cjs133554061717124361 0
 108C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\full\self.js133554115469670406 0
@@ -4060,8 +4063,6 @@
 115C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\stable\set\index.js133554115441610452 0
 150C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\replace\Atrule.js133554061690923249 0
 118C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-what\lib\es\parse.d.ts.map133554061699188515 0
-118C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-what\lib\es\stringify.d.ts133554061716046023 0
-121C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\full\array\virtual\map.js133554115450228541 0
 112C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-what\lib\es\types.js133554061689169993 0
 118C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-what\lib\commonjs\index.js133554061667166400 0
 119C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-tree\lib\tokenizer\types.js133554061781135776 0
@@ -4130,8 +4131,8 @@
 130C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\actual\array\virtual\find-index.js133554115419716373 0
 121C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-tree\lib\syntax\config\mix.js133554061777215734 0
 111C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\es\map\index.js133554115439911288 0
-116C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\full\string\split.js133554115472685234 0
 133C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-tree\lib\syntax\config\parser-selector.js133554061779008037 0
+116C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\full\string\split.js133554115472685234 0
 122C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\core\lib\public\Symbols.js133554061773163209 0
 124C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-tree\lib\syntax\config\parser.js133554061779113250 0
 124C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\css-tree\lib\syntax\config\walker.js133554061791548661 0
@@ -5269,7 +5270,6 @@
 134C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\caniuse-lite\data\features\user-select-none.js133554061885466597 0
 119C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\full\string\fontsize.js133554115422624833 0
 131C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\proposals\json-parse-with-source.js133554115447932762 0
-119C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\profiler\lib\index.d.ts133554061699243879 0
 125C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\proposals\keys-composition.js133554115448032718 0
 127C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\proposals\map-upsert-stage-2.js133554115450031723 0
 119C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\core-js\proposals\map-upsert.js133554115450051687 0
@@ -8728,6 +8728,7 @@
 117C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\profiler\src\index.js133554061671227731 0
 117C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\profiler\src\Trace.js133554061687997435 0
 118C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\profiler\src\Tracer.js133554061689064835 0
+119C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\profiler\lib\index.d.ts133554061699243879 0
 117C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\profiler\lib\index.js133554061669247428 0
 130C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\profiler\lib\SamplingProfiler.d.ts133554061699746253 0
 128C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\profiler\lib\SamplingProfiler.js133554061678597211 0
@@ -8971,7 +8972,7 @@
 165C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\pseudo\nth-of-type.js133554061753984511 0
 161C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\pseudo\slotted.js133554061770934627 0
 164C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\pseudo\common\nth.js133554061754282881 0
-97C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.e37f48ea.js133554768825230632 0
+97C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.e37f48ea.js133555542316915470 0
 176C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\pseudo\common\nthWithOfClause.js133554061762169874 0
 102C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@lezer\lr\dist133554061689320351 1
 159C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\node\AnPlusB.js133554061671338665 0
@@ -9617,11 +9618,11 @@
 101C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\.bin\sass.cmd133554062789946723 0
 103C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\.bin\semver.cmd133554061887175333 0
 101C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\node_modules\.bin\svgo.cmd133554061887165348 0
-100C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\favicon.8b2f57bf.png133554748843521404 0
 110C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\forkifyproject.3464ddca.js.map133554095152695700 0
-98C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\icons.21bad73c.svg133554748843756516 0
-98C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\icons.dfd7a6db.svg133554748843756516 0
 101C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.62406edb.js.map133554099850471127 0
-102C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.f7626f62.css.map133554748843836529 0
-90C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.html133554748843736470 0
-97C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\logo.726d37a8.png133554748843766491 0
+90C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.html133555496635561443 0
+98C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\icons.dfd7a6db.svg133555497881349760 0
+100C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\favicon.8b2f57bf.png133555541071797313 0
+98C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\icons.21bad73c.svg133555541072811383 0
+97C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\logo.726d37a8.png133555541073494366 0
+102C:\Users\admin\OneDrive\Desktop\frontendprojects\Javascript\forkifyproject\dist\index.f7626f62.css.map133555541076253237 0
